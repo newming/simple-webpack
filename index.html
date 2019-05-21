@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        // 需要注意 style.innerHTML 的时候，插入的是字符串，字符串不能换行
+        let code = `
+            let style = document.createElement('style')
+            style.innerHTML = "body{background: red;}"
+            document.head.append(style)
+        `
+        eval(code)
+    </script> -->
+    <!-- <script>
+        // 需要注意 style.innerHTML 的时候，插入的是字符串，字符串不能换行
+        var styleText = 'body \n {background: red; \n }';
+        let code = `
+            let style = document.createElement('style')
+            style.innerHTML = ${JSON.stringify(styleText).replace(/\\r|\\n/g, '')}
+            document.head.append(style)
+        `
+        eval(code)
+    </script> -->
+
+    <script src="dist/main.js"></script>
+</body>
+</html>
